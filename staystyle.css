@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  background-color: white;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 5px 10px 18px #888888;
+  font-family: "Signika", sans-serif;
+}
+.nav-links {
+  text-decoration: none;
+}
+.nav-links a {
+  text-decoration: none;
+  padding: 5px;
+  justify-content: space-around;
+  margin: 20px;
+}
+.stay-bg {
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(rgba(34, 33, 33, 0.527), rgba(51, 50, 50, 0.603)),
+    url(./Image/stay.bg.jpg) center/cover no-repeat;
+  align-items: center;
+  text-align: center;
+}
+.stay-bg h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding-top: 8vh;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/* Plan page */
+.main-container {
+  height: 10vh;
+}
+
+.stay-pic1 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background: linear-gradient(rgba(36, 36, 36, 0.301), rgba(32, 32, 32, 0.342)),
+    url(./Image/stay.resort.jpg) center/cover no-repeat;
+}
+.stay-pic2 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background: linear-gradient(rgba(36, 36, 36, 0.103), rgba(32, 32, 32, 0.486)),
+    url(./Image/stay.hotel.jpg) center/cover no-repeat;
+}
+.stay-pic3 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background: linear-gradient(rgba(27, 27, 27, 0.527), rgba(29, 29, 29, 0.445)),
+    url(./Image/stay.liveaboard.jpg) center/cover no-repeat;
+}
+
+.stay-pic4 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background: linear-gradient(rgba(36, 36, 36, 0.493), rgba(32, 32, 32, 0.568)),
+    url(./Image/stay.guesthouse.jpg) center/cover no-repeat;
+}
+.stay-pic div h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-size: 30px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+.stay-pic div h4 {
+  color: white;
+  letter-spacing: 0.5px;
+  padding-top: 20px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 20px;
+  justify-content: space-around;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.stay-pic div a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.stay-pic1-text {
+  padding: 10px;
+}
+.stay-pic1-sub-text,
+.stay-pic2-sub-text,
+.stay-pic3-sub-text,
+.stay-pic4-sub-text {
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .stay-pic div h4 {
+    color: white;
+    letter-spacing: 0.5px;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+}

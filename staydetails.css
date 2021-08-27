@@ -1,0 +1,479 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(sackers_gothic_light_at-webfont.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav {
+  background-color: white;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 5px 10px 18px #888888;
+}
+.nav-links {
+  text-decoration: none;
+}
+.nav-links a {
+  font-family: "Signika", sans-serif;
+  text-decoration: none;
+  padding: 5px;
+  justify-content: space-around;
+  margin: 20px;
+}
+.main-resort {
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.resort-bg,
+.hotels-bg,
+.liveaboards-bg,
+.guesthouse-bg {
+  height: 60vh;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.resort-bg h1,
+.hotels-bg h1,
+.liveaboards-bg h1,
+.guesthouse-bg h1 {
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Roboto", sans-serif;
+}
+.resort-bg a,
+.hotels-bg a,
+.liveaboards-bg a,
+.guesthouse-bg a {
+  color: white;
+  background-color: rgba(36, 35, 35, 0.623);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  align-items: center;
+}
+.resort-details,
+.hotels-details,
+.liveaboards-details,
+.guesthouse-details {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: rgb(241, 241, 241);
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+.resort1,
+.resort2,
+.resort3,
+.resort4,
+.resort5,
+.hotel1,
+.hotel2,
+.hotel3,
+.hotel4,
+.hotel5,
+.liveaboards1,
+.liveaboards2,
+.liveaboards3,
+.liveaboards4,
+.liveaboards5,
+.guesthouse1,
+.guesthouse2,
+.guesthouse3,
+.guesthouse4,
+.guesthouse5 {
+  background-color: white;
+  height: 45vh;
+  border-radius: 20px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+}
+
+.sub-resort1-1,
+.sub-resort3-1,
+.sub-resort5-1,
+.sub-hotel1-1,
+.sub-hotel3-1,
+.sub-hotel5-1,
+.sub-liveaboards1-1,
+.sub-liveaboards3-1,
+.sub-liveaboards5-1,
+.sub-guesthouse1-1,
+.sub-guesthouse3-1,
+.sub-guesthouse5-1 {
+  background-color: brown;
+  height: 45vh;
+  width: 80vh;
+  border-top-right-radius: 20px;
+  border-end-end-radius: 20px;
+  display: flex;
+  overflow: hidden;
+}
+.sub-resort2-1,
+.sub-resort4-1,
+.sub-hotel2-1,
+.sub-hotel4-1,
+.sub-liveaboards2-1,
+.sub-liveaboards4-1,
+.sub-guesthouse2-1,
+.sub-guesthouse4-1 {
+  background-color: brown;
+  height: 45vh;
+  width: 80vh;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  overflow: hidden;
+}
+.sub-resort1-2,
+.sub-resort3-2,
+.sub-resort5-2,
+.sub-hotel1-2,
+.sub-hotel3-2,
+.sub-hotel5-2,
+.sub-liveaboards1-2,
+.sub-liveaboards3-2,
+.sub-liveaboards5-2,
+.sub-guesthouse1-2,
+.sub-guesthouse3-2,
+.sub-guesthouse5-2 {
+  height: 45vh;
+  width: 110vh;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: auto;
+}
+.sub-resort2-2,
+.sub-resort4-2,
+.sub-hotel2-2,
+.sub-hotel4-2,
+.sub-liveaboards2-2,
+.sub-liveaboards4-2,
+.sub-guesthouse2-2,
+.sub-guesthouse4-2 {
+  height: 45vh;
+  width: 110vh;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: auto;
+}
+.sub-resort1-2 h2,
+.sub-resort2-2 h2,
+.sub-resort3-2 h2,
+.sub-resort4-2 h2,
+.sub-resort5-2 h2,
+.sub-hotel1-2 h2,
+.sub-hotel2-2 h2,
+.sub-hotel3-2 h2,
+.sub-hotel4-2 h2,
+.sub-hotel5-2 h2,
+.sub-liveaboards1-2 h2,
+.sub-liveaboards2-2 h2,
+.sub-liveaboards3-2 h2,
+.sub-liveaboards4-2 h2,
+.sub-liveaboards5-2 h2,
+.sub-guesthouse1-2 h2,
+.sub-guesthouse2-2 h2,
+.sub-guesthouse3-2 h2,
+.sub-guesthouse4-2 h2,
+.sub-guesthouse5-2 h2 {
+  letter-spacing: 2px;
+  font-size: 30px;
+  /*font-family: 'sackers_gothic_light_atRg';*/
+  font-family: "myFirstFont", Arial, sans-serif;
+  padding: 10px;
+  color: #07213b;
+}
+.sub-resort1-2 h4,
+.sub-resort2-2 h4,
+.sub-resort3-2 h4,
+.sub-resort4-2 h4,
+.sub-resort5-2 h4,
+.sub-hotel1-2 h4,
+.sub-hotel2-2 h4,
+.sub-hotel3-2 h4,
+.sub-hotel4-2 h4,
+.sub-hotel5-2 h4,
+.sub-liveaboards1-2 h4,
+.sub-liveaboards2-2 h4,
+.sub-liveaboards3-2 h4,
+.sub-liveaboards4-2 h4,
+.sub-liveaboards5-2 h4,
+.sub-guesthouse1-2 h4,
+.sub-guesthouse2-2 h4,
+.sub-guesthouse3-2 h4,
+.sub-guesthouse4-2 h4,
+.sub-guesthouse5-2 h4 {
+  letter-spacing: 2px;
+  font-family: "Open Sans", sans-serif;
+  padding: 20px;
+}
+.sub-resort1-2 h4 span,
+.sub-resort2-2 h4 span,
+.sub-resort3-2 h4 span,
+.sub-resort4-2 h4 span,
+.sub-resort5-2 h4 span,
+.sub-hotel1-2 h4 span,
+.sub-hotel2-2 h4 span,
+.sub-hotel3-2 h4 span,
+.sub-hotel4-2 h4 span,
+.sub-hotel5-2 h4 span,
+.sub-liveaboards1-2 h4 span,
+.sub-liveaboards2-2 h4 span,
+.sub-liveaboards3-2 h4 span,
+.sub-liveaboards4-2 h4 span,
+.sub-liveaboards5-2 h4 span,
+.sub-guesthouse1-2 h4 span,
+.sub-guesthouse2-2 h4 span,
+.sub-guesthouse3-2 h4 span,
+.sub-guesthouse4-2 h4 span,
+.sub-guesthouse5-2 h4 span {
+  letter-spacing: 2px;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(31, 30, 30, 0.795);
+}
+
+/* Resorts */
+.resort-bg {
+  background: linear-gradient(rgba(36, 36, 36, 0.301), rgba(32, 32, 32, 0.342)),
+    url(./Image/stay.resort.jpg) center/cover no-repeat;
+}
+.sub-resort1-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.resort.4.1.jpg) center/cover no-repeat;
+}
+.sub-resort2-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0.151), rgba(32, 32, 32, 0)),
+    url(./Image/stay.resort.1.jpg) center/cover no-repeat;
+}
+.sub-resort3-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0.151), rgba(32, 32, 32, 0)),
+    url(./Image/stay.resort.2.jpg) center/cover no-repeat;
+}
+.sub-resort4-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.resort.3.jpg) center/cover no-repeat;
+}
+
+.sub-resort5-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0.151), rgba(32, 32, 32, 0)),
+    url(./Image/stay.resort.5.1.jpg) center/cover no-repeat;
+}
+
+/* Hotels */
+
+.hotels-bg {
+  background: linear-gradient(rgba(36, 36, 36, 0.301), rgba(32, 32, 32, 0.342)),
+    url(./Image/stay.hotel.jpg) center/cover no-repeat;
+}
+.sub-hotel1-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.hotel.1.jpg) center/cover no-repeat;
+}
+.sub-hotel2-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.hotel.2.jpg) center/cover no-repeat;
+}
+.sub-hotel3-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.hotel.3.jpg) center/cover no-repeat;
+}
+.sub-hotel4-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.hotel.4.jpg) center/cover no-repeat;
+}
+.sub-hotel5-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.hotel.5.jpg) center/cover no-repeat;
+}
+
+/* LiveAboards */
+
+.liveaboards-bg {
+  background: linear-gradient(rgba(36, 36, 36, 0.301), rgba(32, 32, 32, 0.342)),
+    url(./Image/stay.liveaboard.jpg) center/cover no-repeat;
+}
+.sub-liveaboards1-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.liveaboard.1.jpg) center/cover no-repeat;
+}
+.sub-liveaboards2-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.liveaboard.2.jpg) center/cover no-repeat;
+}
+.sub-liveaboards3-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.liveaboard.3.jpg) center/cover no-repeat;
+}
+.sub-liveaboards4-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.liveaboard.4.jpg) center/cover no-repeat;
+}
+.sub-liveaboards5-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.liveaboard.5.jpg) center/cover no-repeat;
+}
+
+/* Guest House */
+
+.guesthouse-bg {
+  background: linear-gradient(rgba(36, 36, 36, 0.301), rgba(32, 32, 32, 0.342)),
+    url(./Image/stay.guesthouse.jpg) center/cover no-repeat;
+}
+.sub-guesthouse1-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.guesthouse.1.jpg) center/cover no-repeat;
+}
+.sub-guesthouse2-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.guesthouse.2.jpg) center/cover no-repeat;
+}
+.sub-guesthouse3-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.guesthouse.3.jpg) center/cover no-repeat;
+}
+.sub-guesthouse4-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.guesthouse.4.jpg) center/cover no-repeat;
+}
+.sub-guesthouse5-1 {
+  background: linear-gradient(rgba(36, 36, 36, 0), rgba(32, 32, 32, 0)),
+    url(./Image/stay.guesthouse.5.jpg) center/cover no-repeat;
+}
+
+/* Media Quary */
+@media only screen and (max-width: 768px) {
+  .resort-details {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: rgb(241, 241, 241);
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+  }
+  .resort1,
+  .resort2,
+  .resort3,
+  .resort4,
+  .resort5,
+  .hotel1,
+  .hotel2,
+  .hotel3,
+  .hotel4,
+  .hotel5,
+  .liveaboards1,
+  .liveaboards2,
+  .liveaboards3,
+  .liveaboards4,
+  .liveaboards5,
+  .guesthouse1,
+  .guesthouse2,
+  .guesthouse3,
+  .guesthouse4,
+  .guesthouse5 {
+    background-color: white;
+    height: 100vw;
+    width: 62vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+      0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .sub-resort1-1,
+  .sub-resort3-1,
+  .sub-resort5-1,
+  .sub-hotel1-1,
+  .sub-hotel3-1,
+  .sub-hotel5-1,
+  .sub-liveaboards1-1,
+  .sub-liveaboards3-1,
+  .sub-liveaboards5-1,
+  .sub-guesthouse1-1,
+  .sub-guesthouse3-1,
+  .sub-guesthouse5-1 {
+    height: 30vw;
+    width: 62vw;
+    position: absolute;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+  }
+  .sub-resort2-1,
+  .sub-resort4-1,
+  .sub-hotel2-1,
+  .sub-hotel4-1,
+  .sub-liveaboards2-1,
+  .sub-liveaboards4-1,
+  .sub-guesthouse2-1,
+  .sub-guesthouse4-1 {
+    position: absolute;
+    width: 62vw;
+    height: 30vw;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+  }
+  .sub-resort1-2,
+  .sub-resort3-2,
+  .sub-resort5-2,
+  .sub-hotel1-2,
+  .sub-hotel3-2,
+  .sub-hotel5-2,
+  .sub-liveaboards1-2,
+  .sub-liveaboards3-2,
+  .sub-liveaboards5-2,
+  .sub-guesthouse1-2,
+  .sub-guesthouse3-2,
+  .sub-guesthouse5-2 {
+    overflow: auto;
+    position: relative;
+    top: 30vw;
+    height: 70vw;
+    width: 62vw;
+  }
+  .sub-resort2-2,
+  .sub-resort4-2,
+  .sub-hotel2-2,
+  .sub-hotel4-2,
+  .sub-liveaboards2-2,
+  .sub-liveaboards4-2,
+  .sub-guesthouse2-2,
+  .sub-guesthouse4-2 {
+    overflow: auto;
+    position: relative;
+    top: 30vw;
+    width: 62vw;
+    height: 70vw;
+  }
+}

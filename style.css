@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Starting of main-container */
+.main-container {
+  height: 90vh;
+}
+.nav {
+  background-color: white;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 5px 10px 18px #888888;
+}
+.nav-links {
+  text-decoration: none;
+}
+.nav-links a {
+  font-family: "Signika", sans-serif;
+  text-decoration: none;
+  padding: 5px;
+  justify-content: space-around;
+  margin: 20px;
+}
+.lines {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .nav {
+    /* height: 10vh; */
+    background-color: white;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+  }
+  .nav-links {
+    display: none;
+    margin-top: 70px;
+    margin-left: -220%;
+  }
+
+  .nav-links a {
+    color: hsl(210deg 22% 49%);
+  }
+  .lines span {
+    display: block;
+    height: 4px;
+    width: 25px;
+    margin: 4px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.616);
+  }
+  .lines {
+    display: block;
+    height: 30px;
+    width: 30px;
+    padding-right: 30px;
+    /* padding-top: 9px; */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+@keyframes anime1 {
+  0% {
+  }
+  100% {
+    height: 45vh;
+  }
+}
+.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hamavtive {
+  animation: anime1 1s forwards;
+}
+
+/* slider image */
+
+#slider {
+  overflow: hidden;
+}
+.slider {
+  /* position: absolute;
+    top: 20vw; */
+  display: grid;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.sub-text {
+  /* position: absolute;
+    bottom: 65vw; */
+  margin: 10px;
+  padding: 10px;
+}
+.slider .text .sub-text h1 {
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-family: "Signika", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  word-spacing: 8px;
+}
+.slider .text .sub-text p {
+  margin: 10px;
+  padding: 5px;
+  font-family: "Signika", sans-serif;
+}
+.slider .text .sub-text a:hover {
+  transition: 0.5s;
+  background-color: white;
+  border: 1px solid white;
+}
+.slider .text .sub-text a {
+  border: 1px solid black;
+  color: black;
+  padding: 7px;
+  text-decoration: none;
+  font-family: "Signika", sans-serif;
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+.text {
+  position: absolute;
+  top: 210px;
+  width: 100%;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  height: 39vh;
+}
+
+.slider figure {
+  overflow-x: hidden;
+  z-index: -1;
+  position: relative;
+  width: 500%;
+  left: 0;
+  margin: 0;
+  animation: 20s slider infinite;
+  opacity: 0.5;
+}
+
+.slider figure img {
+  overflow-x: hidden;
+  width: 20%;
+  height: 90vh;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  90% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+/* Ending of main-container */
+
+/* Starting of mian */
+main {
+  max-width: 100%;
+}
+/* section-1*/
+.section-1 {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  background-color: rgb(241, 241, 241);
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  justify-content: space-around;
+  position: relative;
+}
+.section-1 div {
+  margin-bottom: 10px;
+}
+.section-1 a {
+  text-decoration: none;
+}
+.pic1 {
+  background-color: brown;
+  background: linear-gradient(
+      rgba(99, 98, 98, 0.144),
+      rgba(102, 102, 102, 0.116)
+    ),
+    url(./Image/pic1.1.jpg) center/cover no-repeat;
+  height: 38vh;
+  width: 25vh;
+  border-radius: 20px;
+}
+.pic1:hover {
+  background: linear-gradient(rgba(46, 46, 46, 0.089), black),
+    url(./Image/pic1.1.jpg) center/cover no-repeat;
+}
+.pic1 h3,
+.pic2 h3,
+.pic3 h3,
+.pic4 h3,
+.pic5 h3,
+.pic6 h3 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 180px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: rgb(250, 248, 248);
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.pic2 {
+  background-color: brown;
+  background: linear-gradient(
+      rgba(99, 98, 98, 0.342),
+      rgba(102, 102, 102, 0.116)
+    ),
+    url(./Image/pic2.jpg) center/cover no-repeat;
+  height: 38vh;
+  width: 25vh;
+  border-radius: 20px;
+}
+.pic2:hover {
+  background: linear-gradient(rgba(46, 46, 46, 0.089), black),
+    url(./Image/pic2.jpg) center/cover no-repeat;
+}
+.pic3 {
+  background-color: brown;
+  background: linear-gradient(
+      rgba(99, 98, 98, 0.144),
+      rgba(102, 102, 102, 0.116)
+    ),
+    url(./Image/pic3.jpg) center/cover no-repeat;
+  height: 38vh;
+  width: 25vh;
+  border-radius: 20px;
+}
+.pic3:hover {
+  background: linear-gradient(rgba(46, 46, 46, 0.089), black),
+    url(./Image/pic3.jpg) center/cover no-repeat;
+}
+.pic4 {
+  background-color: brown;
+  background: linear-gradient(
+      rgba(99, 98, 98, 0.322),
+      rgba(102, 102, 102, 0.336)
+    ),
+    url(./Image/pic4.jpg) center/cover no-repeat;
+  height: 38vh;
+  width: 25vh;
+  border-radius: 20px;
+}
+.pic4:hover {
+  background: linear-gradient(rgba(46, 46, 46, 0.089), black),
+    url(./Image/pic4.jpg) center/cover no-repeat;
+}
+.pic5 {
+  background-color: brown;
+  background: linear-gradient(
+      rgba(99, 98, 98, 0.301),
+      rgba(102, 102, 102, 0.267)
+    ),
+    url(./Image/pic5.jpg) center/cover no-repeat;
+  height: 38vh;
+  width: 25vh;
+  border-radius: 20px;
+}
+.pic5:hover {
+  background: linear-gradient(rgba(46, 46, 46, 0.089), black),
+    url(./Image/pic5.jpg) center/cover no-repeat;
+}
+.pic6 {
+  background-color: brown;
+  background: linear-gradient(
+      rgba(80, 79, 79, 0.322),
+      rgba(102, 102, 102, 0.438)
+    ),
+    url(./Image/pic6.1.jpg) center/cover no-repeat;
+  height: 38vh;
+  width: 25vh;
+  border-radius: 20px;
+}
+.pic6:hover {
+  background: linear-gradient(rgba(46, 46, 46, 0.089), black),
+    url(./Image/pic6.1.jpg) center/cover no-repeat;
+}
+
+/* Section-2 */
+
+.section-2 {
+  height: 80vh;
+  flex-wrap: wrap;
+}
+.section-2 h1 {
+  text-transform: uppercase;
+  color: rgb(122, 125, 128);
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Signika", sans-serif;
+}
+.sec-2-h1-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line {
+  background-color: brown;
+  height: 0.5vh;
+  width: 10vh;
+  border-radius: 20px;
+}
+.stay {
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.resort {
+  background-color: white;
+  height: 50vh;
+  width: 35vh;
+  border-radius: 20px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.sub-resort-1 {
+  background: url(./Image/resort.jpg) center/cover no-repeat;
+  height: 15.5vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.sub-resort-2 {
+  background-color: white;
+  height: 34.5vh;
+  border-end-end-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.hotels {
+  background-color: white;
+  height: 50vh;
+  width: 35vh;
+  border-radius: 20px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.sub-hotels-1 {
+  background: url(./Image/hotel.jpg) center/cover no-repeat;
+  height: 15.5vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.sub-hotels-2 {
+  background-color: white;
+  height: 34.5vh;
+  border-bottom-left-radius: 20px;
+  border-end-end-radius: 20px;
+}
+.liveaboards {
+  background-color: white;
+  height: 50vh;
+  width: 35vh;
+  border-radius: 20px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.sub-liveaboards-1 {
+  background: url(./Image/liveaboards.jpg) center/cover no-repeat;
+  height: 15.5vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.sub-liveaboards-2 {
+  background-color: white;
+  height: 34.5vh;
+  border-bottom-left-radius: 20px;
+  border-end-end-radius: 20px;
+}
+.guesthouse {
+  background-color: white;
+  height: 50vh;
+  width: 35vh;
+  border-radius: 20px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.sub-guesthouse-1 {
+  background: url(./Image/guesthouse.jpg) center/cover no-repeat;
+  height: 15.5vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.sub-guesthouse-2 {
+  background-color: white;
+  height: 34.5vh;
+  border-bottom-left-radius: 20px;
+  border-end-end-radius: 20px;
+}
+.sub-resort-2 h2,
+.sub-hotels-2 h2,
+.sub-liveaboards-2 h2,
+.sub-guesthouse-2 h2 {
+  font-family: "Signika", sans-serif;
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 23px;
+  color: hsl(205, 86%, 17%);
+}
+.sub-resort-2 h4,
+.sub-hotels-2 h4,
+.sub-liveaboards-2 h4,
+.sub-guesthouse-2 h4 {
+  color: rgba(63, 63, 63, 0.575);
+  letter-spacing: 1px;
+  line-height: 30px;
+  padding: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.stay .resort:hover,
+.stay .hotels:hover,
+.stay .liveaboards:hover,
+.stay .guesthouse:hover {
+  transform: scale(1.04);
+  transition: 0.5s all;
+}

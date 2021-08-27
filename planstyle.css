@@ -1,0 +1,165 @@
+.nav {
+  background-color: white;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 5px 10px 18px #888888;
+  font-family: "Signika", sans-serif;
+}
+.nav-links {
+  text-decoration: none;
+}
+.nav-links a {
+  font-family: "Signika", sans-serif;
+  text-decoration: none;
+  padding: 5px;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+/* Plan page */
+.main-container {
+  height: 10vh;
+}
+.plan-bg {
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(
+      rgba(34, 33, 33, 0.479),
+      rgba(104, 104, 104, 0.89)
+    ),
+    url(./Image/plan.bg1.jpg) center/cover no-repeat;
+}
+.plan-bg h1 {
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding-top: 50px;
+  font-family: "Signika", sans-serif;
+}
+.plan-pic1 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background: linear-gradient(rgba(36, 36, 36, 0.151), rgba(32, 32, 32, 0.411)),
+    url(./Image/plan.pic1.2.jpg) center/cover no-repeat;
+}
+.plan-pic2 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background: linear-gradient(rgba(36, 36, 36, 0.39), rgba(32, 32, 32, 0.473)),
+    url(./Image/plan.pic2.3.jpg) center/cover no-repeat;
+}
+.plan-pic3 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background: linear-gradient(
+      rgba(63, 63, 63, 0.493),
+      rgba(102, 102, 102, 0.116)
+    ),
+    url(./Image/plan.pic3.6.jpg) center/cover no-repeat;
+}
+
+.plan-pic4 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background: linear-gradient(rgba(36, 36, 36, 0.151), rgba(32, 32, 32, 0.411)),
+    url(./Image/plan.pic4.2.jpg) center/cover no-repeat;
+}
+.plan-pic5 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background: linear-gradient(rgba(36, 36, 36, 0.151), rgba(32, 32, 32, 0.411)),
+    url(./Image/plan.pic5.3.jpg) center/cover no-repeat;
+}
+.plan-pic6 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background: linear-gradient(rgba(36, 36, 36, 0.151), rgba(32, 32, 32, 0.411)),
+    url(./Image/plan.pic6.2.jpg) center/cover no-repeat;
+}
+
+.plan-pic div h1 {
+  color: white;
+  font-family: "Signika", sans-serif;
+  letter-spacing: 2px;
+  font-size: 30px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+.plan-pic div h4 {
+  color: white;
+  letter-spacing: 0.5px;
+  padding-top: 20px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 20px;
+  justify-content: space-around;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.plan-pic div a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Signika", sans-serif;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.plan-pic1-text {
+  padding: 10px;
+}
+.plan-pic1-sub-text,
+.plan-pic2-sub-text,
+.plan-pic3-sub-text,
+.plan-pic4-sub-text,
+.plan-pic5-sub-text,
+.plan-pic6-sub-text {
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .plan-pic div h4 {
+    color: white;
+    letter-spacing: 0.5px;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+}
